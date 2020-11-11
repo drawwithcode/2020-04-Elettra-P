@@ -5,13 +5,15 @@ let play;
 let page;
 let title;
 
+function preload(){
 
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
 
   //browser window background image
-  page = createImg("assets/window.png");
+  page = createImg("./assets/window.png");
   page.style("width", "auto");
   page.style("height", "auto");
   page.position(width / 2 - 1372, height / 2 - 775);
@@ -24,7 +26,7 @@ function setup() {
   video.style("background-color", "black");
 
 
-  play = createImg("assets/play_button.png", "");
+  play = createImg("./assets/play_button.png", "");
   play.style("width", "50px");
   play.style("height", "50px");
   play.center();
@@ -47,14 +49,14 @@ function draw() {}
 //function to change the play/refresh icon in the player
 function changeIcon() {
   if (i % 2 == 0) {
-    play = createImg("assets/reload_button.png", "");
+    play = createImg("./assets/reload_button.png", "");
     play.style("width", "50px");
     play.style("height", "50px");
     play.center();
     play.mouseClicked(changeIcon);
     i++
   } else {
-    play = createImg("assets/play_button.png", "");
+    play = createImg("./assets/play_button.png", "");
     play.style("width", "50px");
     play.style("height", "50px");
     play.center();
