@@ -6,7 +6,9 @@ let page;
 let title;
 
 function preload(){
-
+loadImage("./assets/window.png");
+loadImage("./assets/play_button.png");
+loadImage("./assets/reload_button.png");
 }
 
 function setup() {
